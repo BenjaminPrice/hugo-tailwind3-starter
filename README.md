@@ -9,6 +9,7 @@ This setup can be used both as a starter project and a theme.
 
 ## Inspiration & Attribution
 Heavily inspired by [bep/hugo-starter-tailwind-basic](https://github.com/bep/hugo-starter-tailwind-basic) Tailwind 2 template.
+
 Sample content from:
 - [mxstbr/markdown-test-file](https://github.com/mxstbr/markdown-test-file)
 
