@@ -1,0 +1,55 @@
+# About the site
+baseURL = "https://example.org"
+title = "Hugo & Tailwind 3 Template"
+
+# Default Language
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+# Site Settings
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+# Author and Social Details
+[params]
+  author = "Benjamin Price"
+  github = "https://github.com/BenjaminPrice"
+  facebook = "https://facebook.com/benpricedev"
+  og_image = "/images/og.png"
+  sitename = "Hugo & Tailwind 3 Template"
+  twitter = "@benpricedev"
+
+# Language Weights
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+
+  [languages.ja]
+    languageName = "Japanese"
+    languageCode = "ja"
+    weight = 2
+
+# **************************************************************************************
+# WARNING: Advanced Users Only Below Here
+# You shouldn't need to update these settings unless you're modifying the base template.
+# **************************************************************************************
+
+# Template Settings
+disableKinds = ["page", "section", "taxonomy", "term", "taxonomyTerm"]
+
+[module]
+  [module.hugoVersion]
+    min = "0.93.2"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[build]
+# Used by PurgeCSS
+writeStats = true
