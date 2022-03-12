@@ -3,7 +3,7 @@
 
 A very simple starter set up with [TailwindCSS](https://tailwindcss.com/) and its [typography plugin](https://tailwindcss.com/docs/typography-plugin) and a build setup using [PostCSS](https://postcss.org/) and PurgeCSS (when running the production build).
 
-In the preview deployment on Netlify it currently has a perfect score, across the board, on both mobile and desktop on [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcocky-pare-3da5d5.netlify.app%2F&tab=mobile).
+In the preview deployment on Netlify it currently has a 100 on both mobile and desktop on [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcocky-pare-3da5d5.netlify.app%2F&tab=mobile) and nearly a perfect score on LightHouse, as well.
 
 
 This setup can be used both as a starter project and a theme.
