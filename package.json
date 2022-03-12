@@ -19,11 +19,11 @@
   },
   "scripts": {
     "start": "concurrently npm:watch:*",
-    "build:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
-    "watch:tw": "npm:build:tw --watch",
+    "watch:tw": "npm run build-tw --watch",
     "watch:hugo": "hugo server",
-    "build:hugo": "hugo --minify",
-    "build": "npm:build:tw && npm:build:hugo"
+    "build-tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
+    "build-hugo": "hugo --minify",
+    "build": "npm run build-tw && npm run build-hugo"
   },
   "keywords": [
     "hugo",
