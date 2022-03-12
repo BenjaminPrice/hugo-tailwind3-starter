@@ -1,18 +1,18 @@
 [build]
 publish = "public"
-command = "npm install && hugo --gc --minify -d public;"
+command = "NODE_ENV=build npm ci && hugo --gc --minify -d public;"
 
 [context.production.environment]
 HUGO_VERSION = "0.93.2"
 
 [context.branch-deploy]
-command = "npm install && hugo --minify --gc -d public -b $DEPLOY_PRIME_URL"
+command = "NODE_ENV=build npm ci && hugo --minify --gc -d public -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.93.2"
 
 [context.deploy-preview]
-command = "npm install && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "NODE_ENV=build npm ci && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.93.2"
