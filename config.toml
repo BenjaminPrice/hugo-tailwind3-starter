@@ -20,6 +20,10 @@ canonifyURLs = true
   og_image = "/images/og.png"
   sitename = "Hugo & Tailwind 3 Template"
   twitter = "@benpricedev"
+  # The following should be relative to the root domain or abosolute URL
+  favicon = ""
+  publisherIcon = "" # Higher resolution version of favicon (Optional)
+  articleSections = ['blog', 'posts']
 
 # Language Weights
 [languages]
