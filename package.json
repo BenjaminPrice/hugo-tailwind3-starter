@@ -22,8 +22,7 @@
     "watch:tw": "npm run build-tw --watch",
     "watch:hugo": "hugo server",
     "build-tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
-    "build-hugo": "hugo --minify",
-    "build": "npm run build-tw && npm run build-hugo"
+    "build-hugo": "hugo --minify"
   },
   "keywords": [
     "hugo",
