@@ -14,6 +14,7 @@ canonifyURLs = true
 
 # Author and Social Details
 [params]
+  description = "A minimal Hugo template using Tailwind 3 and optimized for SEO."
   author = "Benjamin Price"
   github = "https://github.com/BenjaminPrice"
   facebook = "https://facebook.com/benpricedev"
@@ -44,6 +45,10 @@ canonifyURLs = true
 
 # Template Settings
 disableKinds = ["page", "section", "taxonomy", "term", "taxonomyTerm"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
 [module]
   [module.hugoVersion]

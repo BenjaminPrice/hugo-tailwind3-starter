@@ -1,5 +1,10 @@
 {{ .Scratch.Set "title" .Site.Title }}
 
+{{ .Scratch.Set "publisherIcon" .Site.Params.favicon }}
+{{ if .Site.Params.publisherIcon }}
+    {{ .Scratch.Set "publisherIcon" .Site.Params.publisherIcon }}
+{{ end }}
+
 {{ if eq .Kind "home" }}
   {{ .Scratch.Set "title" .Site.Title }}
 {{ end }} 
@@ -70,8 +75,9 @@
 
 <!-- Article Specific Tags -->
 <!-- To make sure this renders only in the article page, we check the section -->
-{{ $articleSection := where .Section "Type" "in" site.Params.articleSections }}
-{{ if articleSection }}
+{{/*  {{ $articleSection := where .Section "Type" "in" .Site.Params.articleSections }}  */}}
+{{/*  {{ if $articleSection }}  */}}
+{{ if false }}
 
 <!-- Pagination meta tags for list pages only -->
 {{ $paginator := .Paginate (where .Pages "Section" "blog") }} 
@@ -159,7 +165,7 @@
             "name": "{{ .Site.Title }}",
             "logo": {
             "@type": "imageObject",
-            "url": "{{ .Site.Params.publisherIcon | .Site.Params.favicon }}"
+            "url": "{{ .Scratch.Get "publisherIcon" }}"
             }
         }
     }
