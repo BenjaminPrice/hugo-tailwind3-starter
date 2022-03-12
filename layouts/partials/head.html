@@ -7,7 +7,7 @@
 {{/* style prep */}}
 {{ $options := dict "inlineImports" true }}
 {{ $styles := resources.Get "css/style.css" }}
-{{ $styles = $styles | resources.PostCSS $options }}
+{{ $styles = $styles | postCSS $options }}
 
 {{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>

@@ -1,3 +1,3 @@
-module github.com/bep/hugo-starter-tailwind-basic/v2
+module github.com/BenjaminPrice/hugo-tailwind3-starter
 
-go 1.15
+go 1.17
