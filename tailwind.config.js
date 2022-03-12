@@ -10,20 +10,6 @@ const px = (px) => `${px}px`;
 
 module.exports = {
   important: true, // See https://tailwindcss.com/docs/configuration#important
-  purge: {
-    enabled: process.env.HUGO_ENVIRONMENT === "production",
-    content: ["./hugo_stats.json", "./layouts/**/*.html", "./content/**/*.md"],
-    theme: require("tailwindcss/defaultTheme"),
-    extractors: [
-      {
-        extractor: (content) => {
-          let els = JSON.parse(content).htmlElements;
-          return els.tags.concat(els.classes, els.ids);
-        },
-        extensions: ["json"],
-      },
-    ],
-    mode: "all",
-  },
+  content: ["./hugo_stats.json", "./layouts/**/*.html", "./content/**/*.md"],
   plugins: [require("@tailwindcss/typography")],
 };
